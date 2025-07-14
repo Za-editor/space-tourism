@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body class="fade-in" id="technologyPage">
+    <div class="contents">
+      <div id="header-section" class="header-section">
+        <div class="logo">
+          <a href="">
+            <img src="./assets/shared/logo.svg" alt="Space Tourism Logo" />
+          </a>
+          <hr class="horizontal" />
+        </div>
+        <div onclick="showSideBar()" class="hamburger">
+          <img src="./assets/shared/icon-hamburger.svg" alt="Menu" />
+        </div>
+        <div class="nav-div">
+          <div class="nav">
+            <ul>
+              <li>
+                <a href="index.html"><span>00 </span> Home</a>
+              </li>
+              <li>
+                <a href="destination-moon.html"><span>01 </span> Destination</a>
+              </li>
+              <li>
+                <a href="crew-commander.html"><span>02 </span> Crew</a>
+              </li>
+              <li>
+                <a href="technology-vehicle.html"
+                  ><span>03 </span> Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="sidebar">
+          <div class="nav">
+            <ul>
+              <li onclick="hideSideBar()" style="align-self: flex-end">
+                <img src="./assets/shared/icon-close.svg" alt="" />
+              </li>
+              <li>
+                <a href="index.html"><span>00 </span> Home</a>
+              </li>
+              <li>
+                <a href="destination-moon.html"><span>01 </span> Destination</a>
+              </li>
+              <li>
+                <a href="crew-commander.html"><span>02 </span> Crew</a>
+              </li>
+              <li>
+                <a href="technology-vehicle.html"
+                  ><span>03 </span> Technology</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="technology">
+        <div class="title">
+          <p><span>03 </span>Space launch 101</p>
+        </div>
+        <div class="technology-content">
+          <div class="tech-write-up">
+            <div class="numbers">
+              <a href="technology-vehicle.html" class="num">1</a>
+              <a href="technology-spaceport.html" class="num">2</a>
+              <a href="technology-vehicle.html" class="num" id="active">3</a>
+            </div>
+            <div class="tech-det">
+              <p class="rank">The terminology...</p>
+              <h2>Space capsule</h2>
+              <p class="about">
+                A space capsule is an often-crewed spacecraft that uses a
+                blunt-body reentry capsule to reenter the Earth's atmosphere
+                without wings. Our capsule is where you'll spend your time
+                during the flight. It includes a space gym, cinema, and plenty
+                of other activities to keep you entertained.
+              </p>
+            </div>
+          </div>
+          <div class="tech-img">
+            <img
+              src="assets/technology/image-space-capsule-portrait.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
